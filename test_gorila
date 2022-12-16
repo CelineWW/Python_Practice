@@ -1,0 +1,19 @@
+def final_sub(my_list):
+    odds = []
+    evens = []
+    for i in range(1, len(my_list)+1):
+        if i % 2 == 0:
+            odds.append(my_list[i-1])
+        else:
+            evens.append(my_list[i-1])
+    sum_odds = sum(odds)
+    sum_evens = sum(evens)
+    print(odds)
+    print(evens)
+    return sum_evens - sum_odds
+
+print(final_sub([1,2,3]))
+print('-'* 20)
+print(final_sub([80,30,30]))
+print('-'* 20)
+print(final_sub([100,100,30]))
